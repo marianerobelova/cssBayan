@@ -17,6 +17,32 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
 .bayan-item {
-    border-top: 0.1em solid #ffefccc3;;
+    border-top: 0.1em solid #ffefccc3;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-btn {
+    width: 2em;
+    height: 2em;
+    background: url(./assets/open.svg) no-repeat;
+}
+
+.meme-img {
+    width: 50%;
+    margin-top: 2em;
 }
