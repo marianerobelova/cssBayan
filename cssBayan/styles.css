@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4aa23;
+    color: #fff1d2;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.3em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.bayan-item {
+    border-top: 0.1em solid #ffefccc3;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.5s;
+}
+
+.bayan-content {
+    transition-duration: 0.2s;
+    color: #937436;
+    cursor: pointer;
+}
+
+.bayan-content:hover {
+    color: #fff1d2;
+    transition-duration: 0.2s;
+}
+
+.drop-btn {
+    width: 2em;
+    height: 2em;
+    background: url(./assets/open.svg) no-repeat;
+    transition-duration: 0.5s;
+}
+
+.meme-img {
+    width: 0%;
+    transition-duration: 0.5s;
+}
+  
+
+.bayan-item:hover .meme-img{
+    width: 45%;
+    transition-duration: 0.5s;
+    margin-top: 2em;
+}
+
+.bayan-item:hover .drop-btn{
+    background: url(./assets/close.svg) no-repeat;
+    transition-duration: 0.5s;
+}
+
+
+.bayan-item:first-child {
+    color: #fff1d2;
+}
+
+.bayan-item:first-child .meme-img{
+    width: 45%;
+    transition-duration: 0.5s;
+    margin-top: 2em;
+}
+
+/*----------media 900---------------*/
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .bayan-item:hover .meme-img{
+        width: 70%;
+        margin-top: 1.5em;
+    }
+
+    .bayan-item:first-child .meme-img{
+        width: 70%;
+        margin-top: 1.5em;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+/*----------media 480---------------*/
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .bayan-item:hover .meme-img{
+        width: 80%;
+        margin-top: 1em;
+    }
+
+    .bayan-item:first-child .meme-img{
+        width: 80%;
+        margin-top: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .drop-btn {
+        width: 2em;
+        height: 2em;
+    }
+}
