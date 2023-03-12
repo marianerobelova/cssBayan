@@ -15,6 +15,7 @@ body {
 
 h1 {
     font-size: 3em;
+    margin: 0.3em;
 }
 
 h2 {
@@ -24,7 +25,7 @@ h2 {
 
 .bayan-item {
     border-top: 0.1em solid #ffefccc3;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +35,12 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    transition-duration: 0.5s;
+}
+
+.meme-text:hover {
+    color: #937436;
+    transition-duration: 0.5s;
 }
 
 .drop-btn {
@@ -43,6 +50,16 @@ h2 {
 }
 
 .meme-img {
-    width: 50%;
+    width: 0%;
     margin-top: 2em;
+    transition-duration: 0.5s;
+}
+
+.bayan-item:hover {
+    cursor: pointer;
+}
+
+.bayan-item:hover .meme-img{
+    width: 40%;
+    transition-duration: 0.5s;
 }
